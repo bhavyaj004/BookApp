@@ -23,7 +23,7 @@ function BookListPage() {
           // Handle errors
           console.error('Error searching for books:', error);
         });
-    }, 500), // Adjust the debounce delay as needed
+    }, 500), 
     [category]
   );
 
@@ -31,7 +31,7 @@ function BookListPage() {
   useEffect(() => {
     // Fetch books based on the current page and category
     if (searchQuery) {
-      // Use the search results when a search query is present
+      
       setBooks(searchResults);
     } else {
       // If no search query is provided, use the category and pagination
